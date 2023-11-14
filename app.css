@@ -9,6 +9,9 @@
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
   --font-family: "Space Mono", monospace;
   /* SPACING and SIZES */
+  --margin-sm: 1rem;
+  --margin-md: 2rem;
+  --margin-lg: 4rem;
   --padding-md: 2rem;
   --border-radius-md: 2rem;
 }
@@ -29,12 +32,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--body-padding);
+  margin: var(--margin-md);
 }
 
 h1 {
   color: var(--very-dark-cyan);
-  margin: 4rem 0;
+  margin: var(--margin-md) 0;
 }
 
 .container {
