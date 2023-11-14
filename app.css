@@ -1,0 +1,47 @@
+:root {
+  /* COLORS */
+  --standard-white: hsl(0, 0%, 100%);
+  --primary-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --font-family: "Space Mono", monospace;
+  /* SPACING and SIZES */
+  --body-padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--light-grayish-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--body-padding);
+}
+
+h1 {
+  color: var(--very-dark-cyan);
+  margin: 4rem 0;
+}
+
+.container {
+  background-color: var(--standard-white);
+  width: 100%;
+  max-width: 70rem;
+
+  height: 36rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* Form inputs - 24px */
+/* Weights - 700 */
