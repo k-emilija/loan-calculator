@@ -9,8 +9,12 @@
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
   --font-family: "Space Mono", monospace;
   /* SPACING and SIZES */
-  --body-padding: 2rem;
+  --padding-md: 2rem;
+  --border-radius-md: 2rem;
 }
+
+/* Form inputs - 24px */
+/* Weights - 700 */
 
 * {
   box-sizing: border-box;
@@ -35,13 +39,23 @@ h1 {
 
 .container {
   background-color: var(--standard-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--padding-md);
+
   width: 100%;
   max-width: 70rem;
-
   height: 36rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
 }
-/* Form inputs - 24px */
-/* Weights - 700 */
+
+.input-section,
+.output-section {
+  border-radius: var(--padding-md);
+}
+
+.output-section {
+  background-color: var(--very-dark-cyan);
+}
