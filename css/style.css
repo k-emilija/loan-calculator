@@ -128,15 +128,19 @@ h1 {
 
 .form input,
 .form select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1rem;
+
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   font-weight: var(--large-font-weight);
+
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
-  width: 100%;
-  --webkit-appearance: none;
-  padding: 1rem;
+
   border: none;
   border-radius: var(--border-radius-xs);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
