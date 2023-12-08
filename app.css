@@ -7,7 +7,12 @@
   --grayish-cyan: hsl(184, 14%, 56%);
   --light-grayish-cyan: hsl(185, 41%, 84%);
   --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  /* FONTS */
   --font-family: "Space Mono", monospace;
+  --regular-font-weight: 400;
+  --large-font-weight: 700;
+  --h1-font-size: 2.5rem;
+  --form-input-size: 1.5rem;
   /* SPACING and SIZES */
   --margin-sm: 1rem;
   --margin-md: 2rem;
@@ -17,27 +22,31 @@
 }
 
 /* Form inputs - 24px */
-/* Weights - 700 */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
+  box-sizing: border-box;
   font-family: var(--font-family);
   background-color: var(--light-grayish-cyan);
+  font-weight: var(--regular-font-weight);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 90vh;
   margin: var(--margin-md);
 }
 
 h1 {
+  font-size: var(--h1-font-size);
   color: var(--very-dark-cyan);
-  margin: var(--margin-md) 0;
+  margin-bottom: var(--margin-md);
 }
 
 .container {
@@ -47,7 +56,7 @@ h1 {
 
   width: 100%;
   max-width: 70rem;
-  height: 36rem;
+  height: 30rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
