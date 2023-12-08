@@ -13,8 +13,8 @@
   --font-family: "Space Mono", monospace;
   --regular-font-weight: 400;
   --large-font-weight: 700;
-  --h1-font-size: 2.5rem;
-  --font-size: 1.5rem;
+  --h1-font-size: 2rem;
+  --font-size: 1rem;
   /* SPACING and SIZES */
   --margin-sm: 1rem;
   --margin-md: 2rem;
@@ -190,7 +190,7 @@ h1 {
 
 .btn:hover {
   cursor: pointer;
-  background-color: var(--light-grayish-cyan);
+  background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
   opacity: 100%;
 }
