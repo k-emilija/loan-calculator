@@ -12,58 +12,63 @@
     />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Loan calculator</title>
   </head>
   <body>
     <!-- GRADIENT BACKGROUND -->
     <canvas id="gradient-canvas"></canvas>
 
-    <!-- LOAN CALCULATOR -->
-    <h1>Loan calculator</h1>
-    <div class="container">
-      <div class="input-section">
-        <!-- Leasing amount, interest rate, lasing period -->
-        <form>
-          <div class="form-group">
-            <label for="loanAmount">Leasing Amount $</label>
-            <input
-              type="number"
-              id="loanAmount"
-              name="loanAmount"
-              min="0"
-              required
-            />
-          </div>
+    <main>
+      <section class="calculator-section">
+        <h1>Loan calculator</h1>
+        <div class="calculator">
+          <div class="input-section">
+            <!-- Leasing amount, interest rate, lasing period -->
+            <form>
+              <div class="form-group">
+                <label for="loanAmount">Leasing Amount $</label>
+                <input
+                  type="number"
+                  id="loanAmount"
+                  name="loanAmount"
+                  min="0"
+                  required
+                />
+              </div>
 
-          <div class="form-group">
-            <label for="interestRate">Annual Percentage Rate</label>
-            <select id="interestRate" name="interestRate" required>
-              <option value="7">7%</option>
-              <option value="10">10%</option>
-              <option value="15">15%</option>
-            </select>
-          </div>
+              <div class="form-group">
+                <label for="interestRate">Annual Percentage Rate</label>
+                <select id="interestRate" name="interestRate" required>
+                  <option value="7">7%</option>
+                  <option value="10">10%</option>
+                  <option value="15">15%</option>
+                </select>
+              </div>
 
-          <div class="form-group">
-            <label for="loanTerm">Leasing Period</label>
-            <select id="loanTerm" name="loanTerm" required>
-              <option value="6">6 months</option>
-              <option value="12">12 months</option>
-              <option value="18">18 months</option>
-              <option value="24">2 years</option>
-              <option value="60">5 years</option>
-              <option value="84">7 years</option>
-            </select>
+              <div class="form-group">
+                <label for="loanTerm">Leasing Period</label>
+                <select id="loanTerm" name="loanTerm" required>
+                  <option value="6">6 months</option>
+                  <option value="12">12 months</option>
+                  <option value="18">18 months</option>
+                  <option value="24">2 years</option>
+                  <option value="60">5 years</option>
+                  <option value="84">7 years</option>
+                </select>
+              </div>
+            </form>
           </div>
-        </form>
-      </div>
-      <div class="output-section">
-        <!-- Estimated monthly payment,  Total amount to be repaid -->
-        <div></div>
-        <div></div>
-        <button></button>
-      </div>
-    </div>
+          <div class="output-section">
+            <!-- Estimated monthly payment,  Total amount to be repaid -->
+            <div></div>
+            <div></div>
+            <button></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="script.js"></script>
     <script src="gradient.js"></script>
   </body>

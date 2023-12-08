@@ -24,6 +24,7 @@
 }
 
 /* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -44,20 +45,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0 var(--margin-lg);
+  padding: var(--padding-md);
 
-  overflow: hidden;
+  position: relative;
+  overflow: auto;
+  height: 100%;
 }
 
 h1 {
   font-size: var(--h1-font-size);
   color: var(--very-dark-cyan);
   margin-bottom: var(--margin-md);
+  text-align: center;
 }
 
-/* Vajag pārtaisīt atsevišķi konteineri un tad sekciju tiasīt, kur iekšā ir forma */
-.container {
+/* ANIMATED GRADIENT IN THE BACKGROUND*/
+
+#gradient-canvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  --gradient-color-1: #c5e4e7;
+  --gradient-color-2: #c5e4e7;
+  --gradient-color-3: #26bfab;
+  --gradient-color-4: #c5e4e7;
+}
+
+/* CALCULATOR SECTION */
+
+.calculator {
   background-color: var(--standard-white);
   border-radius: var(--border-radius-md);
   padding: var(--padding-md);
@@ -71,26 +92,10 @@ h1 {
   column-gap: 2rem;
 }
 
-/* ANIMATED GRADIENT IN THE BACKGROUND*/
-
-#gradient-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -10;
-  --gradient-color-1: #c5e4e7;
-  --gradient-color-2: #c5e4e7;
-  --gradient-color-3: #26bfab;
-  --gradient-color-4: #c5e4e7;
-}
-
-/*  */
-
 .input-section,
 .output-section {
   border-radius: var(--padding-md);
+  padding: var(--padding-md);
 }
 
 .output-section {
