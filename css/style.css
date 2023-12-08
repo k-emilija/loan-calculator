@@ -135,6 +135,7 @@ h1 {
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
   width: 100%;
+  --webkit-appearance: none;
   padding: 1rem;
   border: none;
   border-radius: var(--border-radius-xs);
