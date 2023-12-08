@@ -215,5 +215,5 @@ footer {
   font-size: 1rem;
   text-align: center;
   color: var(--very-dark-cyan);
-  margin: var(--margin-md) 0;
+  margin-top: var(--margin-md);
 }
