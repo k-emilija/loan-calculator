@@ -14,13 +14,16 @@
   --regular-font-weight: 400;
   --large-font-weight: 700;
   --h1-font-size: 2.5rem;
-  --form-input-size: 1.5rem;
+  --font-size: 1.5rem;
   /* SPACING and SIZES */
   --margin-sm: 1rem;
   --margin-md: 2rem;
   --margin-lg: 4rem;
+
+  --padding-sm: 1rem;
   --padding-md: 2rem;
   --padding-lg: 4rem;
+
   --border-radius-xs: 0.5rem;
   --border-radius-md: 2rem;
 }
@@ -41,7 +44,7 @@ body {
   background-color: var(--light-grayish-cyan);
   font-weight: var(--regular-font-weight);
   line-height: 1.7;
-  font-size: 1.5rem;
+  font-size: var(--font-size);
 
   display: flex;
   flex-direction: column;
@@ -84,10 +87,6 @@ h1 {
   background-color: var(--standard-white);
   border-radius: var(--border-radius-md);
   padding: var(--padding-md);
-
-  /* width: 100%;
-  max-width: 70rem;
-  height: 35rem; */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -172,3 +171,28 @@ h1 {
 }
 
 /* Reset Button */
+
+.btn {
+  background-color: var(--primary-cyan);
+  color: var(--very-dark-cyan);
+  opacity: 60%;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: var(--large-font-weight);
+  line-height: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: var(--padding-sm);
+  border: none;
+  border-radius: var(--border-radius-xs);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  opacity: 100%;
+}
+
+/* Kad ir kaut kas selektots formā, tad opacity uz prastā pogas state arī ir 100%, lai norādītu, ka viņu var izmantot */
