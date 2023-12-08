@@ -17,4 +17,8 @@
     font-size: 2.5rem;
     color: var(--primary-cyan);
   }
+
+  footer {
+    font-size: 0.75rem;
+  }
 }

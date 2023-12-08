@@ -196,3 +196,10 @@ h1 {
 }
 
 /* Kad ir kaut kas selektots formā, tad opacity uz prastā pogas state arī ir 100%, lai norādītu, ka viņu var izmantot */
+
+/* FOOTER */
+
+footer {
+  font-size: 1rem;
+  margin: var(--margin-md) 0;
+}
