@@ -96,6 +96,7 @@ h1 {
 }
 
 /* Both Form and Calculations Panels */
+
 .form-panel,
 .calculations-panel {
   border-radius: var(--padding-md);
