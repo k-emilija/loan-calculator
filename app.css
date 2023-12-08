@@ -1,3 +1,5 @@
+/* VARIABLES */
+
 :root {
   /* COLORS */
   --standard-white: hsl(0, 0%, 100%);
@@ -21,19 +23,22 @@
   --border-radius-md: 2rem;
 }
 
-/* Form inputs - 24px */
-
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
+/* GENERAL STYLES */
+
 body {
   box-sizing: border-box;
   font-family: var(--font-family);
   background-color: var(--light-grayish-cyan);
   font-weight: var(--regular-font-weight);
+  line-height: 1.7;
+  font-size: 1.5rem;
 
   display: flex;
   flex-direction: column;
@@ -45,8 +50,28 @@ body {
   overflow: hidden;
 }
 
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--very-dark-cyan);
+  margin-bottom: var(--margin-md);
+}
+
+/* Vajag pārtaisīt atsevišķi konteineri un tad sekciju tiasīt, kur iekšā ir forma */
+.container {
+  background-color: var(--standard-white);
+  border-radius: var(--border-radius-md);
+  padding: var(--padding-md);
+
+  width: 100%;
+  max-width: 70rem;
+  height: 30rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
 /* ANIMATED GRADIENT IN THE BACKGROUND*/
-/* #09686d; */
 
 #gradient-canvas {
   position: absolute;
@@ -61,25 +86,7 @@ body {
   --gradient-color-4: #c5e4e7;
 }
 
-h1 {
-  font-size: var(--h1-font-size);
-  color: var(--very-dark-cyan);
-  margin-bottom: var(--margin-md);
-}
-
-.container {
-  background-color: var(--standard-white);
-  border-radius: var(--border-radius-md);
-  padding: var(--padding-md);
-
-  width: 100%;
-  max-width: 70rem;
-  height: 30rem;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-}
+/*  */
 
 .input-section,
 .output-section {
