@@ -1,5 +1,9 @@
-/* 1024px */
+/* Tablets and Landscape Views - 1024px */
 @media only screen and (max-width: 64rem) {
+  body {
+    padding: var(--padding-sm);
+  }
+
   .calculator {
     padding: var(--padding-sm);
     grid-template-columns: 1fr;
@@ -8,12 +12,28 @@
     height: 47rem;
   }
 
+  .calculations-box {
+    grid-template-columns: 1fr;
+  }
+
   .numbers {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-cyan);
   }
 
   footer {
     font-size: 0.75rem;
+  }
+}
+
+/* Smaller Phones - 432px */
+@media only screen and (max-width: 27rem) {
+  .form-panel,
+  .calculations-panel {
+    padding: var(--padding-sm);
+  }
+
+  .calculator {
+    height: 45rem;
   }
 }
