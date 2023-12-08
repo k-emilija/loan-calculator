@@ -116,6 +116,15 @@ h1 {
   color: var(--very-dark-cyan);
 }
 
+.form .label-with-img {
+  position: relative;
+}
+.form .label-with-img img {
+  position: absolute;
+  top: 5px;
+  right: -18px;
+}
+
 .form input,
 .form select {
   font-family: inherit;
