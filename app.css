@@ -39,8 +39,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
-  margin: var(--margin-md);
+  height: 100vh;
+  margin: 0 var(--margin-lg);
+
+  overflow: hidden;
+}
+
+/* ANIMATED GRADIENT IN THE BACKGROUND*/
+/* #09686d; */
+
+#gradient-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  --gradient-color-1: #c5e4e7;
+  --gradient-color-2: #c5e4e7;
+  --gradient-color-3: #26bfab;
+  --gradient-color-4: #c5e4e7;
 }
 
 h1 {
