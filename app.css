@@ -20,6 +20,7 @@
   --margin-md: 2rem;
   --margin-lg: 4rem;
   --padding-md: 2rem;
+  --border-radius-xs: 0.5rem;
   --border-radius-md: 2rem;
 }
 
@@ -78,6 +79,11 @@ h1 {
 
 /* CALCULATOR SECTION */
 
+.calculator-section {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
 .calculator {
   background-color: var(--standard-white);
   border-radius: var(--border-radius-md);
@@ -85,19 +91,58 @@ h1 {
 
   width: 100%;
   max-width: 70rem;
-  height: 30rem;
+  height: 35rem;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
 }
 
-.input-section,
-.output-section {
+/* Both Form and Calculations Panels */
+.form-panel,
+.calculations-panel {
   border-radius: var(--padding-md);
   padding: var(--padding-md);
 }
 
-.output-section {
+/* Form Panel */
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.form label {
+  display: inline-block;
+  margin-bottom: var(--margin-sm);
+}
+
+.form input,
+.form select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: var(--large-font-weight);
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: var(--border-radius-xs);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form input::placeholder {
+  color: var(--grayish-cyan);
+  font-weight: var(--regular-font-weight);
+}
+
+.form *:focus {
+  outline: 3px solid var(--primary-cyan);
+}
+
+/* Calculations Panel */
+
+.calculations-panel {
   background-color: var(--very-dark-cyan);
 }
