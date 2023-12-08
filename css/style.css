@@ -20,6 +20,7 @@
   --margin-md: 2rem;
   --margin-lg: 4rem;
   --padding-md: 2rem;
+  --padding-lg: 4rem;
   --border-radius-xs: 0.5rem;
   --border-radius-md: 2rem;
 }
@@ -79,19 +80,14 @@ h1 {
 
 /* CALCULATOR SECTION */
 
-.calculator-section {
-  max-width: 70rem;
-  margin: 0 auto;
-}
-
 .calculator {
   background-color: var(--standard-white);
   border-radius: var(--border-radius-md);
   padding: var(--padding-md);
 
-  width: 100%;
+  /* width: 100%;
   max-width: 70rem;
-  height: 35rem;
+  height: 35rem; */
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -144,5 +140,35 @@ h1 {
 /* Calculations Panel */
 
 .calculations-panel {
+  font-family: inherit;
+  font-size: inherit;
   background-color: var(--very-dark-cyan);
+  font-weight: var(--large-font-weight);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.calculations-box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1rem;
+}
+
+.calculations-grid div {
+  width: 50%;
+}
+
+.text {
+  color: var(--standard-white);
+  display: flex;
+  align-items: center;
+}
+
+.numbers {
+  font-size: 3rem;
+  color: var(--primary-cyan);
+}
+
+/* Reset Button */

@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/favicon-32x32.png" />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
@@ -19,7 +21,7 @@
     <!-- GRADIENT BACKGROUND -->
     <canvas id="gradient-canvas"></canvas>
 
-    <main>
+    <main class="main">
       <section class="calculator-section">
         <h1>Leasing calculator</h1>
         <div class="calculator">
@@ -27,7 +29,10 @@
           <div class="form-panel">
             <form class="form" name="calculate-lease">
               <div class="form-group">
-                <label for="leasing-amount">Leasing Amount $</label>
+                <label for="leasing-amount"
+                  >Leasing Amount
+                  <img src="./assets/icon-dollar.svg" alt="dollar icon"
+                /></label>
                 <input
                   type="number"
                   id="leasing-amount"
@@ -63,9 +68,13 @@
 
           <!-- Estimated monthly payment,  Total amount to be repaid -->
           <div class="calculations-panel">
-            <div></div>
-            <div></div>
-            <button></button>
+            <div class="calculations-box">
+              <div class="text">Monthly payment</div>
+              <div id="monthly-payment" class="numbers">$0.00</div>
+              <div class="text">Total</div>
+              <div id="total-payment" class="numbers">$0.00</div>
+            </div>
+            <button class="btn">Reset</button>
           </div>
         </div>
       </section>

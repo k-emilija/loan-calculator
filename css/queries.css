@@ -9,6 +9,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 2rem;
-    height: 50rem;
+    height: 60rem;
   }
 }
