@@ -130,6 +130,7 @@ h1 {
 .form select {
   font-family: inherit;
   font-size: inherit;
+  line-height: inherit;
   font-weight: var(--large-font-weight);
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
