@@ -44,6 +44,7 @@ body {
   background-color: var(--light-grayish-cyan);
   font-weight: var(--regular-font-weight);
   line-height: 1.7;
+
   font-size: var(--font-size);
   -webkit-text-size-adjust: 100%;
   font-size: 100%;
@@ -130,7 +131,6 @@ h1 {
 
 .form input,
 .form select {
-  -webkit-appearance: none;
   width: 100%;
   padding: 1rem;
 
