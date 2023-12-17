@@ -195,7 +195,6 @@ h1 {
 .btn {
   background-color: var(--primary-cyan);
   color: var(--very-dark-cyan);
-  opacity: 60%;
   font-family: inherit;
   font-size: inherit;
   font-weight: var(--large-font-weight);
@@ -209,16 +208,26 @@ h1 {
 }
 
 /* Hovers aktīvs tikai tad, kad ir ievadīts kaut kas formas lauciņos + opacity ir 100%.  */
+/* Kad ir kaut kas selektots formā, tad opacity uz prastā pogas state arī ir 100%, lai norādītu, ka viņu var izmantot */
 
 .btn:hover {
-  /* cursor: not-allowed; */
   cursor: pointer;
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
   opacity: 100%;
 }
 
-/* Kad ir kaut kas selektots formā, tad opacity uz prastā pogas state arī ir 100%, lai norādītu, ka viņu var izmantot */
+.btn:disabled {
+  opacity: 60%;
+  cursor: not-allowed;
+}
+
+.btn:disabled:hover {
+  opacity: 60%;
+  cursor: not-allowed;
+  background-color: var(--primary-cyan);
+  color: var(--very-dark-cyan);
+}
 
 /* FOOTER */
 
