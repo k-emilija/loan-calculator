@@ -18,3 +18,24 @@
 // Function to enable or disable the reset button based on form field completion
 // Event listeners for form inputs
 // Event listener for the reset button
+
+// Math.pow(x, y) = xigrek-pakāpē
+// x - base number, y - exponent number
+
+// Formula, kas aprēķina ikmēneša maksājumu
+function calculateMonthlyPayment(rate, months, amount) {
+  // Converting the annual interest rate to monthly rate
+  // Aprēķinu gada procentu likmi par ikmēneša procentu likmi
+  let monthlyRate = rate / 100 / 12;
+
+  // Calculating the denominator of the formula
+  // Saucēja aprēķināšana
+  let denominator = 1 - Math.pow(1 + monthlyRate, -months);
+
+  let monthlyPayment = amount * (monthlyRate / denominator);
+
+  return monthlyPayment;
+}
+
+let payment = calculateMonthlyPayment(7, 6, 5000);
+console.log(payment);

@@ -208,7 +208,10 @@ h1 {
   transition: all 0.3s;
 }
 
+/* Hovers aktīvs tikai tad, kad ir ievadīts kaut kas formas lauciņos + opacity ir 100%.  */
+
 .btn:hover {
+  /* cursor: not-allowed; */
   cursor: pointer;
   background-color: var(--very-light-grayish-cyan);
   color: var(--very-dark-cyan);
