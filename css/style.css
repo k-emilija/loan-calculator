@@ -219,12 +219,11 @@ h1 {
 
 .btn:disabled {
   opacity: 60%;
-  cursor: not-allowed;
 }
 
 .btn:disabled:hover {
   opacity: 60%;
-  cursor: not-allowed;
+  cursor: auto;
   background-color: var(--primary-cyan);
   color: var(--very-dark-cyan);
 }
