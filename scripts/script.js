@@ -32,7 +32,13 @@ function calculateMonthlyPayment(rate, months, amount) {
   // Saucēja aprēķināšana
   let denominator = 1 - Math.pow(1 + monthlyRate, -months);
 
+  // Calculating the monthly payment using the formula
+  // Mēneša maksājuma aprēķināšana
   let monthlyPayment = amount * (monthlyRate / denominator);
+
+  // Rounding up the result to two decimal places
+  // Noapaļoju rezultātu
+  monthlyPayment = Math.ceil(monthlyPayment * 100) / 100;
 
   return monthlyPayment;
 }
