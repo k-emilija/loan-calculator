@@ -156,6 +156,10 @@ h1 {
   outline: 3px solid var(--primary-cyan);
 }
 
+.form input.error {
+  border: 2px solid red;
+}
+
 /* Calculations Panel */
 
 .calculations-panel {

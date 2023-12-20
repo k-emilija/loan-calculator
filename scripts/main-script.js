@@ -33,7 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let totalPayment = monthlyPayment * term;
 
     // Display the payment
-    if (amount && rate && term) {
+    // Check if amount is a valid number and greater than zero
+
+    if (!isNaN(amount) && amount > 0 && rate && term) {
       document.getElementById("monthly-payment").textContent =
         "$" + monthlyPayment.toFixed(2);
       document.getElementById("total-payment").textContent =
