@@ -156,15 +156,6 @@ h1 {
   outline: 3px solid var(--primary-cyan);
 }
 
-.form input.errorMessage {
-  border: 2px solid red;
-}
-
-.errorMessage {
-  display: none;
-  color: red;
-}
-
 /* Calculations Panel */
 
 .calculations-panel {

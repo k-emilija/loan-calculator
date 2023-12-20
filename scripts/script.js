@@ -17,7 +17,7 @@ function calculateMonthlyPayment(rate, months, amount) {
 
 document.addEventListener("DOMContentLoaded", function () {
   //////////////////////////////////////////////
-  //  Declaring the reset button
+  // Obtaining the reset button element by its ID
   let resetButton = document.getElementById("reset-button");
 
   // Event listener for the reset button
@@ -65,19 +65,20 @@ document.addEventListener("DOMContentLoaded", function () {
     function validateForm() {
       let amountValidation = document.getElementById("leasing-amount");
 
+      // Alert and clear the input value and reset payment displays for invalid input
       if (parseFloat(amountValidation.value) <= 0) {
         alert("Enter a valid positive number");
-        amountValidation.value = ""; // Clear the input value
+        amountValidation.value = "";
         document.getElementById("monthly-payment").textContent = "$0.00";
         document.getElementById("total-payment").textContent = "$0.00";
       }
     }
-    // Listening for errors
+    // Listening for the wrong input to validate the form
     amountInput.addEventListener("input", validateForm);
   }
 
   //////////////////////////////////////////////
-  // Event listeners for form inputs
+  // Event listeners for form inputs to trigger the calculateLoan function
   let formInputs = document.querySelectorAll(".form input, .form select");
   formInputs.forEach(function (input) {
     input.addEventListener("input", calculateLoan);
