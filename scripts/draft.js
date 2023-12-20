@@ -45,10 +45,3 @@ function calculateMonthlyPayment(rate, months, amount) {
 
 let payment = calculateMonthlyPayment(7, 6, 5000);
 console.log(payment);
-
-// Event listener - klausās vai ievada tekstu vai izvēlās select, tad noņem diabled klasi - removeAttribute(disabled)
-
-// Reset funkcija pievieno atpakaļ disabled klasi, un noņem aprēķinus, ievades
-//  button.setAttribute("disabled", "");
-
-// Aprekinos var pajautat, ar if
