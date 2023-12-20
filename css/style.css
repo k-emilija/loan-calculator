@@ -111,7 +111,7 @@ h1 {
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 .form label {
@@ -156,8 +156,13 @@ h1 {
   outline: 3px solid var(--primary-cyan);
 }
 
-.form input.error {
+.form input.errorMessage {
   border: 2px solid red;
+}
+
+.errorMessage {
+  display: none;
+  color: red;
 }
 
 /* Calculations Panel */
