@@ -19,7 +19,7 @@ This project is a user-friendly loan calculator designed to help individuals est
 
 ## How to Use
 
-1. Visit the https://k-emilija.github.io/loan-calculator/ or open the HTML file in a web browser.
+1. Visit the (https://k-emilija.github.io/loan-calculator/) or open the HTML file in a web browser.
 2. Enter the loan amount, select the annual percentage rate, and choose the leasing period.
 3. The monthly payment and total repayment amounts will be automatically calculated and displayed.
 4. To reset the form, click the "Reset" button.
@@ -37,7 +37,7 @@ This project is a user-friendly loan calculator designed to help individuals est
 
 ## Acknowledgments
 
-This project draws inspiration from the design, typography and color scheme of the Tip Calculator App by Frontend Mentor https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX. 
+This project draws inspiration from the design, typography and color scheme of the Tip Calculator App by Frontend Mentor (https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). 
 The favicon used in this project is also sourced from Frontend Mentor.
 
 ## Notes for Developers
