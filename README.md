@@ -33,11 +33,12 @@ This project is a user-friendly loan calculator designed to help individuals est
 
 ## Author
 
-- **Kerija E. Baumane**: This calculator was created by Kerija E. Baumane in 2024 for learning purposes.
+- **Kerija E. Baumane**: This calculator was created by Kerija E. Baumane for learning purposes.
 
 ## Acknowledgments
 
-This project draws inspiration from the design, typography and color scheme of the Tip Calculator App by Frontend Mentor https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX. The favicon used in this project is also sourced from Frontend Mentor.
+This project draws inspiration from the design, typography and color scheme of the Tip Calculator App by Frontend Mentor https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX. 
+The favicon used in this project is also sourced from Frontend Mentor.
 
 ## Notes for Developers
 
